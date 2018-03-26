@@ -23,7 +23,7 @@ export class SpreadsheetComponent implements OnInit {
   }
 
   setPayDates() {
-    let payDate = new Date( this.baseDate.split('-') );
+    let payDate = new Date( this.baseDate );
     const currentDate = new Date();
     while (this.payDates.length !== this.dateCount) {
       if (payDate > currentDate) {
